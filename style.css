@@ -27,6 +27,10 @@ p {
   font-size: 16px;
   color: #465b52;
 }
+.body {
+  background-image: url("./img/back.jpg");
+  background-size: cover;
+}
 .section-p1 {
   padding: 40px 80px;
 }
@@ -115,11 +119,12 @@ body {
 }
 /* home page */
 #hero {
-  background-image: url("./img/hero4.png");
+  background-image: url("./img/products/n16.jpg");
   height: 90vh;
   width: 100%;
   background-size: cover;
-  background-position: top 25% right 0;
+  background-position: center;
+  /* background-position: top 25% right 0; */
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -128,6 +133,10 @@ body {
 }
 #hero h4 {
   padding-bottom: 15px;
+  color: #fff;
+}
+#hero h2 {
+  color: #fff;
 }
 #hero h1 {
   color: #088178;
@@ -135,11 +144,12 @@ body {
 }
 #hero p {
   padding-bottom: 15px;
+  color: #fff;
 }
 #hero button {
   background-image: url("./img/button.png");
   background-color: transparent;
-  color: #088178;
+  color: #fff;
   border: 0;
   /* padding from top is 14px from left 80px from bottom  14px and from top 65px */
   padding: 14px 80px 14px 65px;
@@ -301,7 +311,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("./img/banner/b17.jpg");
+  background-image: url("./img/products/f15.jpg");
   min-width: 650px;
   height: 50vh;
   background-size: cover;
@@ -309,7 +319,7 @@ body {
   padding: 30px;
 }
 #sm-banner .banner-box2 {
-  background-image: url("./img/banner/b10.jpg");
+  background-image: url("./img/products/n20.jpg");
 }
 #sm-banner h4 {
   color: #fff;
@@ -342,7 +352,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("./img/banner/b7.jpg");
+  background-image: url("./img/products/n15.jpg");
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -351,10 +361,10 @@ body {
   margin-bottom: 20px;
 }
 #banner3 .banner-box2 {
-  background-image: url("./img/banner/b4.jpg");
+  background-image: url("./img/products/n8.jpg");
 }
 #banner3 .banner-box3 {
-  background-image: url("./img/banner/b18.jpg");
+  background-image: url("./img/products/n12.jpg");
 }
 #banner3 h2 {
   color: #fff;
