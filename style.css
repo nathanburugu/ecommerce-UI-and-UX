@@ -27,10 +27,15 @@ p {
   font-size: 16px;
   color: #465b52;
 }
-.body {
+body {
   background-image: url("./img/back.jpg");
-  background-size: cover;
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: repeat;
 }
+/* .mwili {
+  background-image: linear-gradient(90deg, #e3ffe7ce 0%, #d9e7ffd3 100%);
+} */
 .section-p1 {
   padding: 40px 80px;
 }
@@ -70,12 +75,25 @@ body {
   justify-content: space-between;
   /* padding from top and bottom will be 20px and from left and right will be 80px */
   padding: 20px 80px;
-  background: #e3e6f3;
+  background: #e3e6f39f;
+
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
+}
+#header i {
+  font-size: 30px;
+}
+#header h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+}
+#header span {
+  color: #088178;
+  font-size: 40px;
 }
 #navbar {
   display: flex;
@@ -169,10 +187,17 @@ body {
   text-align: center;
   padding: 25px 15px;
   /* box shadow from x 20px from y 20px for the radius 34px and then add rgba color */
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border: 1px solid #cce7d0;
+  /* box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0; */
   border-radius: 5px;
   margin: 15px 0;
+  border: 1px solid #c4c4c4;
+  /* border-radius: 10px; */
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(2px);
 }
 #feature .fe-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
@@ -222,12 +247,22 @@ body {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
-  border: 1px solid #cce7d0;
+  /* border: 1px solid #cce7d0; */
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); */
   margin: 15px 0;
   position: relative;
+  border: 1px solid #c4c4c4;
+  /* border-radius: 10px; */
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(2px);
+}
+#product1 .pro i {
+  font-size: 25px;
 }
 #product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
@@ -322,17 +357,17 @@ body {
   background-image: url("./img/products/n20.jpg");
 }
 #sm-banner h4 {
-  color: #fff;
+  color: #222;
   font-size: 20px;
   font-weight: 300;
 }
 #sm-banner h2 {
-  color: #fff;
+  color: #222;
   font-size: 28px;
   font-weight: 800;
 }
 #sm-banner span {
-  color: #fff;
+  color: rgb(7, 108, 241);
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 15px;
@@ -367,12 +402,12 @@ body {
   background-image: url("./img/products/n12.jpg");
 }
 #banner3 h2 {
-  color: #fff;
+  color: #088178;
   font-size: 22px;
   font-weight: 900;
 }
 #banner3 h3 {
-  color: #ec544e;
+  color: #041e42;
   font-size: 15px;
   font-weight: 800;
 }
@@ -425,6 +460,13 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(2px);
 }
 footer .col {
   display: flex;
@@ -432,8 +474,15 @@ footer .col {
   align-items: flex-start;
   margin-bottom: 20px;
 }
-footer .logo {
-  margin-bottom: 30px;
+footer h1 {
+  margin-bottom: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+}
+footer span {
+  color: #088178;
+  font-size: 40px;
 }
 footer .logo img {
   width: 100%;
@@ -579,6 +628,12 @@ footer .copyright {
   #header {
     padding: 10px 30px;
   }
+  #header h1 {
+    font-size: 28px;
+  }
+  #header span {
+    font-size: 29px;
+  }
   #hero {
     padding: 0 20px;
     background-position: 55%;
@@ -680,6 +735,13 @@ footer .copyright {
 #proDetails {
   display: flex;
   margin-top: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(2px);
 }
 #proDetails .single-pro-image {
   width: 40%;
