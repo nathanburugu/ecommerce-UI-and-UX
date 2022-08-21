@@ -75,16 +75,31 @@ body {
   justify-content: space-between;
   /* padding from top and bottom will be 20px and from left and right will be 80px */
   padding: 20px 80px;
-  background: #e3e6f39f;
+  /* background: #e3e6f39f; */
 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6); */
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
+  border: 1px solid #c4c4c4;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  /* backdrop-filter: blur( 2px) */
 }
 #header i {
   font-size: 30px;
+  font-style: normal;
+  /* font-style: normal; */
+}
+#header #mobile i {
+  text-decoration: none;
+  font-style: normal;
 }
 #header h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -105,12 +120,18 @@ body {
   padding: 0 20px;
   position: relative;
 }
+#navbar a i {
+  text-decoration: none;
+}
 #navbar li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease-in-out;
+}
+#navbar #lg-bag a {
+  font-size: 30px;
 }
 #navbar li a:hover,
 #navbar li a.active {
@@ -152,17 +173,21 @@ body {
 #hero h4 {
   padding-bottom: 15px;
   color: #fff;
+  text-shadow: 2px 8px 24px rgba(85, 209, 231, 0.9);
 }
 #hero h2 {
   color: #fff;
+  text-shadow: 2px 8px 24px rgba(85, 226, 231, 0.5);
 }
 #hero h1 {
   color: #088178;
   padding-bottom: 15px;
+  text-shadow: 2px 8px 24px rgba(85, 231, 199, 0.5);
 }
 #hero p {
   padding-bottom: 15px;
   color: #fff;
+  text-shadow: 2px 8px 24px rgba(245, 208, 247, 0.9);
 }
 #hero button {
   background-image: url("./img/button.png");
@@ -262,7 +287,8 @@ body {
   backdrop-filter: blur(2px);
 }
 #product1 .pro i {
-  font-size: 25px;
+  font-size: 50px;
+  font-style: normal;
 }
 #product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
@@ -270,29 +296,48 @@ body {
 #product1 .pro img {
   width: 100%;
   border-radius: 20px;
+  outline-style: double;
+
+  outline: 1.5px double rgb(163, 163, 145);
+  box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.9);
+  text-shadow: 2px 8px 24px rgba(226, 85, 231, 0.9);
 }
 #product1 .pro .des {
   text-align: start;
   padding: 10px 0;
 }
+#product1 .pro .des i {
+  font-size: 17px;
+}
 #product1 .pro .des span {
-  color: #060063;
-  font-size: 12px;
+  color: #088178;
+  font-size: 14px;
+  text-shadow: 2px 8px 24px rgba(85, 231, 224, 0.9);
 }
 #product1 .pro .des h5 {
-  padding-top: 7px;
-  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  font-size: 15px;
   color: #1a1a1a;
+  text-shadow: 2px 8px 24px rgba(18, 20, 22, 0.9);
 }
-#product1 .pro .des i {
+#product1 h2,
+p {
+  text-shadow: 2px 8px 24px rgba(226, 85, 231, 0.9);
+}
+#product1 .pro a i {
+  font-size: 19px;
+}
+/* #product1 .pro .des i {
   color: rgb(251, 255, 0);
   font-size: 12px;
-}
+} */
 #product1 .pro .des h4 {
   padding-top: 7px;
   color: #088178;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
+  text-shadow: 2px 8px 24px rgba(85, 231, 224, 0.9);
 }
 #product1 .pro .cart {
   width: 40px;
@@ -690,10 +735,15 @@ footer .copyright {
   }
   #proDetails #picha {
     width: 100%;
-    margin-right: 0;
+    margin-right: 10px;
   }
   #proDetails #details {
     width: 100%;
+  }
+  #proDetails .single-pro-image {
+    width: 40%;
+    margin: 0px;
+    margin-bottom: 15px;
   }
 }
 /* shop.html styling starts here */
@@ -735,6 +785,34 @@ footer .copyright {
 #proDetails {
   display: flex;
   margin-top: 20px;
+  /* border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(2px); */
+}
+#proDetails #MainImg {
+  border-radius: 15px;
+  outline: 1.5px solid rgb(163, 163, 145);
+  box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.9);
+  text-shadow: 2px 8px 24px rgba(226, 85, 231, 0.9);
+  /* height: 90%;
+  width: 90%; */
+}
+.single-pro-image #MainImg {
+  height: 90%;
+  width: 90%;
+  margin: 20px 20px;
+}
+#proDetails .single-pro-image {
+  width: 40%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* margin: 50px; */
+  height: 50%;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
@@ -743,35 +821,73 @@ footer .copyright {
   border-left: 0.25px rgba(0 0 0 / 0.1);
   backdrop-filter: blur(2px);
 }
-#proDetails .single-pro-image {
-  width: 40%;
-  margin: 50px;
-}
 .small-img-group {
   display: flex;
   justify-content: space-between;
 }
 .small-img-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   flex-basis: 24%;
   cursor: pointer;
+  /* border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(2px); */
+}
+.small-img-col .small-img {
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  outline: 1.5px solid rgb(163, 163, 145);
+  box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.9);
+  text-shadow: 2px 8px 24px rgba(226, 85, 231, 0.9);
 }
 #proDetails .single-pro-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 50%;
   width: 50%;
-  padding-top: 70px;
+  padding-top: 30px;
+  margin-left: 5px;
+  margin-bottom: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 0.25px rgba(0 0 0 / 0.1);
+  border-left: 0.25px rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(2px);
+  text-align: center;
+  align-items: center;
 }
 #proDetails .single-pro-details h6 {
   margin-top: 10;
 }
 #proDetails .single-pro-details h4 {
-  padding: 40px 0 20px 0;
+  padding: 5px 0 5px 0;
 }
 #proDetails .single-pro-details h2 {
   font-size: 26px;
 }
+#proDetails .single-pro-details p {
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #222;
+}
+
 #proDetails .single-pro-details select {
   display: block;
   padding: 5px 10px;
   margin-bottom: 10px;
+  width: 25%;
 }
 #proDetails .single-pro-details input {
   width: 50px;
@@ -779,6 +895,8 @@ footer .copyright {
   padding-left: 10px;
   font-size: 16px;
   margin-right: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
 }
 #proDetails .single-pro-details input:focus {
   outline: none;
